@@ -464,7 +464,7 @@ header.post-header h2 a,
 header.page-header h2 {
 	font-family: 'Droid Serif', Georgia, Times, serif;
 	color: #262626;
-	font-size: 2.5em;
+	font-size: 2.8em;
 	font-weight: normal;
 }
 
@@ -513,27 +513,27 @@ section.post-content h6 {
 }
 
 section.post-content h1 {
-	font-size: 2.5em;
+	font-size: 2.8em;
 }
 
 section.post-content h2 {
-	font-size: 2em;
+	font-size: 2.5em;
 }
 
 section.post-content h3 {
-	font-size: 1.8em;
+	font-size: 2em;
 }
 
 section.post-content h4 {
-	font-size: 1.6em;
+	font-size: 1.8em;
 }
 
 section.post-content h5 {
-	font-size: 1.4em;
+	font-size: 1.6em;
 }
 
 section.post-content h6 {
-	font-size: 1em;
+	font-size: 1.2em;
 }
 
 section.post-content p {
@@ -626,6 +626,7 @@ pre  {
 footer.post-footer {
 	border-top: 1px solid #ccc;
 	padding-top: 5px;
+	clear: both;
 }
 
 /* WordPress Images and Captions */
@@ -746,7 +747,7 @@ span.count {
 
 #comments-title {
 	font-family: 'Droid Serif', Georgia, Times, serif;
-	font-size: 2.5em;
+	font-size: 2.8em;
 	margin: 10px 0 20px;
 	font-weight: normal;
 }
@@ -839,14 +840,19 @@ ol.commentlist li.comment ul.children li.depth-5 {
 	font-weight: normal;
 }
 
-#respond p {
+#respond p,
+.wpcf7-form p {
 	margin-bottom: 10px;
 }
 
-#respond label {
+#respond label,
+.wpcf7-form label {
 	font-family: 'Droid Serif', Georgia, Times, serif;
-	font-size: 1.4em;
 	font-style: italic;
+}
+
+#respond label {
+	font-size: 1.4em;	
 }
 
 span.required {
@@ -861,24 +867,33 @@ span.required {
 }
 
 .comment-form-url label,
-.comment-form-comment label {
+.comment-form-comment label,
+.wpcf7-form label {
 	margin-right: 400px;
 }
 
-#respond input {
+#respond input,
+.wpcf7-form input {
 	margin: 5px 0 10px;
 	padding: 3px;
 	width: 162px;
 	border: 1px solid #ccc;
-	font-family: 'Droid Serif', Georgia, Times, serif;
-	font-style: italic;
-	font-size: 1.2em;
+	font-family: 'Droid Sans', Georgia, Times, serif;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
 
-#respond textarea {
+#respond input {
+	font-size: 1.2em;
+}
+
+.wpcf7-form input {
+	font-size: .9em;
+}
+
+#respond textarea,
+.wpcf7-form textarea {
 	margin-top: 5px;
 	padding: 3px;
 	width: 462px;
@@ -887,11 +902,18 @@ span.required {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
+}
+
+#respond textarea {
 	font-size: 1.2em;
 }
 
-#respond input#submit {
-	font-size: 1.4em;
+.wpcf7-form textarea {
+	font-size: .9em;
+}
+
+#respond input#submit,
+.wpcf7-form input#submit {
 	color: #fff;
 	font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
 	font-weight: bold;
@@ -903,6 +925,15 @@ span.required {
 	border-radius: 3px;
 	border: none;
 }
+
+#respond input#submit {
+	font-size: 1.4em;
+}
+
+.wpcf7-form input#submit {
+	font-size: 1em;
+}
+
 
 /* Sidebar
 -------------------------------------------------------------------------------*/
