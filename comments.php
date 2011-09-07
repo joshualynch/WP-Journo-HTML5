@@ -24,7 +24,7 @@ function html5_comment( $comment, $args, $depth ) {
 				
 				<div class="comment-author vcard">
 					
-					<?php echo get_avatar( $comment, 42 ); ?>
+					<?php echo get_avatar( $comment, 44 ); ?>
 					
 					<?php printf( __( '%s <span class="says">says:</span>', 'html5' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
 				
@@ -107,11 +107,7 @@ function html5_comment( $comment, $args, $depth ) {
 
 	<?php if ( have_comments() ) : ?>
 		
-		<h2 id="comments-title">
-			
-			<?php printf( _n( 'Comments (1)', 'Comments (%1$s)', get_comments_number(), 'html5' ), number_format_i18n( get_comments_number() ), '<em>' . get_the_title() . '</em>' ); ?>
-		
-		</h2>
+		<h2 id="comments-title"><?php printf( _n( 'Comments (1)', 'Comments (%1$s)', get_comments_number(), 'html5' ), number_format_i18n( get_comments_number() ), '<em>' . get_the_title() . '</em>' ); ?></h2>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		

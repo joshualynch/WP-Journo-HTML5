@@ -108,8 +108,6 @@
 	function register_my_menu() {
 		register_nav_menu( 'top-navigation', __( 'Top Navigation' ) );
 	}
-    
-    add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
 
 	// Clean up default pagination
 	function show_posts_nav() {
