@@ -1,0 +1,83 @@
+/* 
+
+iss.css
+rather than edit this file, copy it to your template directory and 
+edit it there: e.g. twentyten/iss.css 
+
+contents:
+
+	1. instant search & suggest plugin
+
+*/
+
+
+/* 1. instant search & suggest plugin
+--------------------------------------------------------------------------------------- */
+
+/* force a scrollbar to stop visual jumping */ 
+html 
+	{
+	overflow-y: scroll; 
+	}
+
+.iss_results 
+	{
+	background: #262626;
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 10000;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	-moz-box-shadow: -1px 1px 1px #b3b3b3;
+  	-webkit-box-shadow: -1px 1px 1px #b3b3b3;
+  	box-shadow: -1px 1px 1px #b3b3b3;
+	max-width: 161px; /* set this to the width of your search box */
+	}
+
+.iss_results li 
+	{
+	padding: 5px 10px;
+	text-align: left;
+	word-wrap: break-word;
+	color: #fff;
+	font-size: 1.2em;
+	}
+	
+.iss_over 
+	{
+	background: ##262626;
+	cursor: pointer;
+	text-decoration: underline;
+	}
+
+.iss_results li:last-child,
+.iss_reuslts li.ac_over:last-child
+	{
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	}
+
+.iss_match
+	{
+	color: #ec3527;
+	}
+
+/* while search is being performed show loading icon */
+
+.iss-on
+	{
+	background-image: url(../images/loader.gif) !important;
+	background-repeat: no-repeat !important;
+	background-position: 98.5% center !important;
+	}

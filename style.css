@@ -406,7 +406,7 @@ nav#access .menu-header ul li ul li li a {
 hgroup#header h1 a,
 footer#widgets h1 a {
 	font-family: 'Monofett', Arial, sans-serif;
-	font-size: 8em;
+	font-size: 10em;
 	color: #262626;
 	text-shadow: 0 1px 1px #B3B3B3;
 	text-decoration: none;
@@ -425,7 +425,7 @@ footer#widgets h1 a:active {
 
 hgroup#header h2 {
 	padding-left: 20px;
-	font-size: 1.3em;
+	font-size: 1.6em;
 	color: #262626;
 }
 
@@ -433,7 +433,7 @@ hgroup#header h2 {
 -------------------------------------------------------------------------------*/
 
 article {
-	margin-bottom: 50px;
+	margin-bottom: 65px;
 }
 
 article.page,
@@ -896,7 +896,7 @@ span.required {
 .wpcf7-form textarea {
 	margin-top: 5px;
 	padding: 3px;
-	width: 462px;
+	width: 100%;
 	border: 1px solid #ccc;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -1007,24 +1007,11 @@ h3.widget-title {
 	color: #262626;
 }
 
-/* RSS Widget */
- 
-a.rsswidget img {
-	display: none;
-}
-
-.widget_rss h3:before {
-	content: "f";
-	font-family: 'PictosRegular';
-	font-size: 1.2em;
-	line-height: 0;
-}
-
 /* Search */
 
 .widget_search .s {
 	background: transparent;
-	width: 136px;
+	width: 130px;
 	padding: 3px;
 	border: 1px solid #262626;
 	border-right: none;
@@ -1098,14 +1085,29 @@ a.rsswidget img {
 	font-weight: bold;
 }
 
-/* Blogroll Widgets */
+/* Subsribe via RSS */
 
-.widget_links h3:before {
+.subscribe h3:before {
+	content: "f";
+	font-family: 'PictosRegular';
+	font-size: 1.2em;
+	padding-right: 3px;
+	line-height: 0;
+}
+
+/* Blogroll & RSS Widgets */
+
+.widget_links h3:before,
+.widget_rss h3:before {
 	content: "j";
 	font-family: 'PictosRegular';
 	font-size: 1.2em;
 	padding-right: 3px;
 	line-height: 0;
+}
+ 
+a.rsswidget img {
+	display: none;
 }
 
 /* Popular Posts Widget*/
@@ -1175,6 +1177,7 @@ footer#widgets p.tweet-bubble a:hover {
 
 #sitemap section ul {
 	padding: 0 0 20px 20px;
+	margin-left: 5px;
 }
 
 /* Footer

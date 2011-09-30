@@ -27,7 +27,13 @@ Template Name: Wide Content w/o Sidebar
 
 		</article>
 		
-		<?php comments_template(); ?>
+		<?php /*?>
+		
+			Uncomment if you do think you'll ever want comments on your static pages.
+		
+			<?php comments_template(); ?>
+		
+		<?php */?>
 
 		<?php endwhile; endif; ?>
         

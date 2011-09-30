@@ -4,6 +4,6 @@
                         
                         <time datetime="<?php the_time('c'); ?>" class="post-date"><?php the_time('F j, Y'); ?></time>
                         
-                        <span class="category">in <?php the_category(' &amp; ') ?></span>
+                        <span class="category"> in <?php the_category(' &amp; ') ?></span>
                     
                     </div>

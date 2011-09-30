@@ -30,38 +30,16 @@
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	
 	<meta name="author" content="Joshua Lynch">
-	<meta name="Copyright" content="Copyright Joshua Lynch 2010. All Rights Reserved.">
+	<meta name="Copyright" content="Copyright Joshua Lynch 2011. All Rights Reserved.">
 
 	<!-- Dublin Core Metadata : http://dublincore.org/ -->
 	<meta name="DC.title" content="WP Journo">
-	<meta name="DC.subject" content="What you're about.">
+	<meta name="DC.subject" content="About WordPress, journalism and publishers using WP as a CMS">
 	<meta name="DC.creator" content="Joshua Lynch">
 	
-	<!--  Mobile Viewport meta tag
-	j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
-	device-width : Occupy full width of the screen in its current orientation
-	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
-	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width -->
-	<!-- Uncomment to use; use thoughtfully!
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-	-->
-	
-	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">
-	<!-- This is the traditional favicon.
-		 - size: 16x16 or 32x32
-		 - transparency is OK
-		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
-		 
-	<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/_/img/apple-touch-icon.png">
-	<!-- The is the icon for iOS's Web Clip.
-		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
-		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
-		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
-	
-	<!-- CSS: screen, mobile & print are all in the same file -->
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	
-	<!-- all our JS is at the bottom of the page, except for Modernizr. -->
+	<!-- Modernizr -->
 	<script src="<?php bloginfo('template_directory'); ?>/js/modernizr-1.7.min.js"></script>
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -73,7 +51,13 @@
 </head>
 
 <body <?php body_class(); ?>>
+        
+        <nav id="access" role="navigation">
             
+            <?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'top-navigation' ) ); ?>
+		
+        </nav>
+           
         <hgroup id="header" role="banner">
             
 			<h1><a href="<?php echo get_option('home'); ?>/" rel="home"><?php bloginfo('name'); ?></a></h1>
@@ -81,11 +65,5 @@
             <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
             
         </hgroup>    
-        
-        <nav id="access" role="navigation">
-            
-            <?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'top-navigation' ) ); ?>
-		
-        </nav>
         
        	<div id="page-wrap" class="group">
