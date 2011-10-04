@@ -15,7 +15,7 @@
     
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic&v1' rel='stylesheet' type='text/css'>
     
-    <link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC|Bevan|Carter+One|Monofett|Michroma|Six+Caps|Orbitron|Permanent+Marker&subset=latin&v2&text=WPJourno' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Monofett&subset=latin&v2&text=WPJourno' rel='stylesheet' type='text/css'>
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" /> 
 
