@@ -224,6 +224,8 @@ body {
 	background: url(images/white-texture.png);
 	font-size: 62.5%;
 	font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 hgroup#header {

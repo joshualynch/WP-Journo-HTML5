@@ -7,7 +7,7 @@
 <!--[if gt IE 9]><!--><html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
 <!-- the "no-js" class is for Modernizr. -->
 
-<head id="wpjourno" data-template-set=wpjourno-html5-wordpress-theme">
+<head id="wpjourno" data-template-set="wpjourno-html5-wordpress-theme">
 
 	<!-- Load Google Fonts -->
 
